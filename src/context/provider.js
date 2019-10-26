@@ -4,6 +4,8 @@ import React from "react";
 import { Provider } from "./context";
 
 const MeetingProvider = ({ children }) => {
-  return <Provider>{children}</Provider>;
+  const test = "Test.";
+
+  return <Provider value={{ test }}>{children}</Provider>;
 };
 export default MeetingProvider;
