@@ -1,16 +1,19 @@
 import React from "react";
+import MeetingProvider from "./context/provider";
 import { Grid, Typography } from "@material-ui/core";
 
 function App() {
   return (
-    <Grid container>
-      <Grid item xs={4}>
-        Sheeit
+    <MeetingProvider>
+      <Grid container>
+        <Grid item xs={4}>
+          <Typography variant="h4">Configure Meeting</Typography>
+        </Grid>
+        <Grid item xs={8}>
+          <Typography variant="h4">Statistics</Typography>
+        </Grid>
       </Grid>
-      <Grid item xs={8}>
-        Son
-      </Grid>
-    </Grid>
+    </MeetingProvider>
   );
 }
 
