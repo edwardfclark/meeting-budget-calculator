@@ -1,11 +1,16 @@
 import React from "react";
-import { Container, Typography } from "@material-ui/core";
+import { Grid, Typography } from "@material-ui/core";
 
 function App() {
   return (
-    <Container>
-      <Typography>Welp.</Typography>
-    </Container>
+    <Grid container>
+      <Grid item xs={4}>
+        Sheeit
+      </Grid>
+      <Grid item xs={8}>
+        Son
+      </Grid>
+    </Grid>
   );
 }
 
